@@ -7,7 +7,7 @@ const crearArchivo = async (base = 5, listar = false, hasta = 10) => {
 
     if (listar) console.log('\n',salida);
 
-    fs.writeFileSync(`../salida/Tabla${base}.txt`, salida);
+    fs.writeFileSync(`./salida/Tabla${base}.txt`, salida);
     return `Tabla${base}.txt`.rainbow;
 }
 
